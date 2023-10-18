@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Price Checker</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("https://images.pexels.com/photos/1414651/pexels-photo-1414651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+main {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.search-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #555;
+}
+
+#price-results {
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Price Checker</h2>
+    </header>
+    <main>
+        <div class="search-container">
+            <label for="location"><h3>Enter City Name or Location:</h3></label>
+            <input type="text" id="location" placeholder="e.g., New York" required>
+            <a href="/getPrices" id="getPricesButton" >Get Prices</a>
+        </div>
+        <div id="price-results">
+            <!-- Price results will be displayed here -->
+        </div>
+    </main>
+</body>
+</html>
